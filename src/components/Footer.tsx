@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 
 function Footer() {
 	return (
@@ -6,6 +7,12 @@ function Footer() {
 				<div className="container max-w-screen-lg mx-auto">
 					<div>
 						<div className="flex flex-wrap justify-center gap-2">
+              <a href="https://www.linkedin.com/in/tomas-gil-amoedo/">
+              <Icon icon="mdi:linkedin" color="#ff6700" className='w-10 h-10' />
+              </a>
+              <a href="https://github.com/Tommydemian">
+              <Icon icon="mdi:github" color="#ff6700" className='w-10 h-10' />
+              </a>
 							
 						</div>
 					</div>
