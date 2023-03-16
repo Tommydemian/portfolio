@@ -8,8 +8,7 @@ function App() {
       <Intro />
       <Portfolio />
       <Timeline />
-
-
+      <Contact />
     </div>
   )
 }
