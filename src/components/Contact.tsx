@@ -34,7 +34,7 @@ const Contact = () => {
             name="message"
             placeholder='Message' 
             id="message"
-            rows="10"
+            rows={10}
             className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none w-3/5"
             />  
           </label>
