@@ -15,8 +15,8 @@ const Contact = () => {
             <input 
             type="text"
             id='name'
-            name='John Doe' 
-            placeholder='Name...' 
+            name='name' 
+            placeholder='John Doe' 
             className='p-2 bg-transparent border-2 rounded-md focus:outline-none w-full sm:w-3/5'
             />
           </label>
