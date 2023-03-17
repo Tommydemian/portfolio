@@ -28,11 +28,11 @@ function App() {
   },[theme])
 
   const sun = (
-    <Icon icon="tabler:sun-filled" color="#06010A" className='w-10 h-10' />
+    <Icon icon="tabler:sun-filled" color="#06010A" className='w-5 h-5 sm:w-10 sm:h-10' />
   )
 
   const moon = (
-    <Icon icon="ph:moon-fill" color="#fff" className='w-10 h-10' />
+    <Icon icon="ph:moon-fill" color="#fff" className='w-5 h-5 sm:w-10 sm:h-10' />
   )
 
   return (

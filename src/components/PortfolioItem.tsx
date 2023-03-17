@@ -21,7 +21,7 @@ const PortfolioItem = ({title, imgUrl, stack, link}: PortfolioItemProps) => {
            <p className='flex flex-wrap  gap-2 flex-row items-center justify-start dark:text-white text-xs md:text-sm'>
             {
                 stack.map(item => (
-                    <span className='inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md'>
+                    <span key={item} className='inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md'>
                         {item}
                     </span>
                 ))
