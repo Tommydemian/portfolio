@@ -17,7 +17,7 @@ const Contact = () => {
             id='name'
             name='John Doe' 
             placeholder='Name...' 
-            className='p-2 bg-transparent border-2 rounded-md focus:outline-none w-3/5'
+            className='p-2 bg-transparent border-2 rounded-md focus:outline-none w-full sm:w-3/5'
             />
           </label>
           <label htmlFor="email">
@@ -26,7 +26,7 @@ const Contact = () => {
             id='email'
             name='email' 
             placeholder='johndoe@gmail.com' 
-            className='my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none w-3/5'
+            className='my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none w-full sm:w-3/5'
             />
           </label>
           <label htmlFor="message">
@@ -35,7 +35,7 @@ const Contact = () => {
             placeholder='Message' 
             id="message"
             rows={10}
-            className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none w-3/5"
+            className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none w-full sm:w-3/5"
             />  
           </label>
           <button 
