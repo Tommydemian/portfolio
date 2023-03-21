@@ -5,8 +5,8 @@ import Title from './Title'
 
 const Timeline = () => {
   return (
-    <div className='flex flex-col md:flex-row justify-center my-20'>
-      <div className='w-full md:w-7/12'>
+    <div className='grid sm:flex sm:flex-row justify-center items-center my-20 mx-auto'>
+      <div className='w-full md:w-7/12  mx-auto px-2'>
         <Title>Timeline</Title>
       {
         timeline.map(item => (

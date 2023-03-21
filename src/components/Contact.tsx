@@ -4,11 +4,11 @@ import Title from './Title'
 const Contact = () => {
   return (
     <div className='flex flex-col mx-auto mb-10 '>
-      <div className='flex justify-center pl-4 sm:pl-0 items-center'>
+      <div className='flex mx-auto px-2 w-full sm:w-8/12 md:w-7/12'>
         <form 
         action='https://getform.io/f/39317eb4-6faa-423a-88cd-08fdf1f158d1'
         method='POST'
-        className='flex flex-col w-full md:w-7/12'
+        className='flex flex-col w-full'
         >
           <Title>Contact</Title>
           <label htmlFor="name">
@@ -17,7 +17,7 @@ const Contact = () => {
             id='name'
             name='name' 
             placeholder='John Doe' 
-            className='p-2 bg-transparent border-2 rounded-md focus:outline-none w-full sm:w-3/5'
+            className='p-2 bg-transparent border-2 rounded-md focus:outline-none w-full'
             />
           </label>
           <label htmlFor="email">
@@ -26,7 +26,7 @@ const Contact = () => {
             id='email'
             name='email' 
             placeholder='johndoe@gmail.com' 
-            className='my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none w-full sm:w-3/5'
+            className='my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none w-full'
             />
           </label>
           <label htmlFor="message">
@@ -35,7 +35,7 @@ const Contact = () => {
             placeholder='Message' 
             id="message"
             rows={10}
-            className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none w-full sm:w-3/5"
+            className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none w-full"
             />  
           </label>
           <button 

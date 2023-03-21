@@ -3,12 +3,17 @@ import Footer from "./Footer";
 import Intro from "./Intro";
 import Portfolio from "./Portfolio";
 import Timeline from "./Timeline";
-
+import TechStack from "./TechStack";
+import Articles from "./Articles";
+import Carousel from "./Carousel";
 
 export {
   Contact,
   Footer,
   Intro,
   Portfolio,
-  Timeline
+  Timeline,
+  TechStack, 
+  Articles, 
+  Carousel
 } 

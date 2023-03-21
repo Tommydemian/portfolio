@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Icon } from '@iconify/react';
 
-import { Intro, Portfolio, Contact, Footer, Timeline } from './components'
+import { Intro, Portfolio, Contact, Footer, Timeline, TechStack, Articles, Carousel } from './components'
 
 function App() {
 
@@ -48,6 +48,9 @@ function App() {
       <div className='max-w-5xl w-11-12 mx-auto px-4 sm:px-0'>
       <Intro />
       <Portfolio />
+      <TechStack />
+      <Articles />
+      <Carousel />
       <Timeline />
       <Contact />
       <Footer />
