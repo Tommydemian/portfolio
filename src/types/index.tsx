@@ -13,3 +13,13 @@ export type Experience = {
     duration: string,
     details: string
 }
+
+type Asset = {
+    default: string;
+  };
+
+export type Slide = {
+    id: number,
+    url: Asset | string, 
+    description: string
+}

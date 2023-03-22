@@ -6,6 +6,7 @@ import Timeline from "./Timeline";
 import TechStack from "./TechStack";
 import Articles from "./Articles";
 import Carousel from "./Carousel";
+import Courses from "./Courses";
 
 export {
   Contact,
@@ -15,5 +16,6 @@ export {
   Timeline,
   TechStack, 
   Articles, 
-  Carousel
+  Carousel, 
+  Courses
 } 

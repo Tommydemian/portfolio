@@ -21,7 +21,7 @@ export default [
       title: 'Terminal Website',
       imgUrl: '', 
       stack: ['GoogleMaps API', 'Express', 'TypeScript', 'Vite'], 
-      link:''
+    link:''
     },
     
 ] as Project[]
