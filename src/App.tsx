@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Icon } from '@iconify/react';
 
+import PortfolioItemDesc from './components/PortfolioItemDesc';
+
 import {
   Intro,
   Portfolio,

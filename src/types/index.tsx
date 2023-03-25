@@ -23,3 +23,11 @@ export type Slide = {
     url: Asset | string, 
     description: string
 }
+
+export type ProjectDescription = {
+    projectName: string    
+    longDescription: string,
+    briefDescription: string,
+    techStack: string[]
+    
+}

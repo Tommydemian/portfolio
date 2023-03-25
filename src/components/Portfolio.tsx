@@ -1,6 +1,9 @@
 import React from 'react'
 import portfolio from '../data/portfolio'
 import PortfolioItem from './PortfolioItem'
+import PortfolioItemDesc from './PortfolioItemDesc'
+
+import projects from '../data/projects'
 
 const Portfolio = () => {
   return (
@@ -17,6 +20,11 @@ const Portfolio = () => {
                 stack={project.stack}
                 />
             ))
+        }
+        {
+          projects.map(project => (
+            <PortfolioItemDesc project={project} />
+          ))
         }
       </div>
     </div>
