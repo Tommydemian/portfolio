@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { Icon } from '@iconify/react';
+
+import Navbar from './containers/Navbar';
 
 import PortfolioItemDesc from './components/PortfolioItemDesc';
 
@@ -48,7 +51,7 @@ function App() {
   )
 
   return (
-    <>
+    <BrowserRouter>
       <button
         type='button'
         onClick={handleThemeSwitch}
@@ -56,19 +59,25 @@ function App() {
       >
         {theme === 'dark' ? sun : moon}
       </button>
-      <div className='bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter'>
-        <div className='max-w-5xl w-11-12 mx-auto px-4 sm:px-0'>
-          <Intro />
-          <Portfolio />
-          <TechStack />
-          <Articles />
-          <Courses />
-          <Timeline />
-          <Contact />
+      <div className='bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen'>
+        <div className='max-w-5xl w-11-12 mx-auto px-4'>
+      <Navbar />
+          <Routes>
+            <Route path='/' element={<Intro />} />
+            <Route path='/projects' element={ <Portfolio />} />
+            {/* <Route />
+            <Route /> */}
+          
+          {/* <TechStack /> */}
+          {/* <Articles /> */}
+          {/* <Courses /> */}
+          {/* <Timeline /> */}
+          {/* <Contact /> */}
+          </Routes>
           <Footer />
         </div>
       </div>
-    </>
+    </BrowserRouter>
   )
 }
 
