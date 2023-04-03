@@ -10,6 +10,7 @@ const Project = () => {
 
     const { id } = useParams()
     
+    
   return (
     <div>
       <Carousel slides={redPadelSlides} />
