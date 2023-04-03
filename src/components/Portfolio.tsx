@@ -1,14 +1,11 @@
 import React from 'react'
 import portfolio from '../data/portfolio'
-import PortfolioItem from './PortfolioItem'
-import PortfolioItemDesc from './PortfolioItemDesc'
-
-import projects from '../data/projects'
+import PortfolioItem from '../containers/PortfolioItem'
 
 const Portfolio = () => {
   return (
-    <div className='flex flex-col md:flex-row justify-center items-center'>
-      <div className='grid grid-cols-1 gap-4'>
+    <div>
+    <div className='flex flex-col justify-center items-center gap-y-10'>
         {
             portfolio.map(project => (
                 <PortfolioItem 
@@ -16,17 +13,15 @@ const Portfolio = () => {
                 id={project.id}
                 imgUrl={project.imgUrl}
                 title={project.title}
+                subtitle={project.subtitle}
+                briefDescription={project.briefDescription}
                 link={project.link}
-                stack={project.stack}
+                stackIcons={project.stackIcons}
                 />
             ))
         }
-        {
-          projects.map(project => (
-            <PortfolioItemDesc project={project} />
-          ))
-        }
-      </div>
+    </div>
+    
     </div>
   )
 }

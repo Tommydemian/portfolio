@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 
 function Footer() {
 	return (
-		<div className="py-5 text-center">
+		<div className="py-5 text-center border-t border-b border-gradient max-w-5xl mx-auto w-full mb-2">
 				<div className="container max-w-screen-lg mx-auto">
 					<div>
 						<div className="flex flex-wrap justify-center gap-2">

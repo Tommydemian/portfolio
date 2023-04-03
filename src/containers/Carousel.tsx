@@ -2,11 +2,16 @@ import React, { useState } from 'react'
 
 import { Icon } from '@iconify/react';
 
-import OverlayDescription from './OverlayDescription';
+import OverlayDescription from '../components/OverlayDescription';
 
-import slides from '../data/slides'
+//import slides from '../data/slides'
+import { Slide } from '../types/index'
 
-const Carousel = () => {
+type CarouselProps = {
+    slides: Slide[],   
+} 
+
+const Carousel = ({slides}: CarouselProps) => {
     const [currentIndex, setCurrentIndex] = useState<number>(1)
 
     // prev and next slide functions 

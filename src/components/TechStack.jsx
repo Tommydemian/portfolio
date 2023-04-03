@@ -1,51 +1,19 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import {frontEndIcons, backendIcons, databaseIcons, testingIcons, versioncontrolIcons} from '../data/techStackIcons'; 
-import TechStackIcon from './TechStackIcon';
+import icons from '../data/techStackIcons'; 
 
 const TechStack = () => {
   return (
-    <div className='my-20 flex flex-col gap-10 px-4 mx-auto'>
-      <TechStackIcon title='Frontend:'>
+    <div 
+     className='my-10 flex items-center justify-center mx-auto gap-x-5 py-4 bg-charcoal px-4'>
         {
-        frontEndIcons.map(icon => (
-          <Icon key={icon} icon={icon} className="w-10 h-10 md:w-20 md:h-20" />
-        ))
-        }    
-        </TechStackIcon>
-        
-      <div className='grid grid-cols-2 md:grid-cols-4 gap-6'> 
-        <TechStackIcon title='Backend:'>
-        {
-        backendIcons.map(icon => (
-          <Icon key={icon} icon={icon} className="w-10 h-10 md:w-20 md:h-20" />
-        ))
-        }    
-        </TechStackIcon>
-        <TechStackIcon title='Databases:'>
-        {
-        databaseIcons.map(icon => (
-          <Icon key={icon} icon={icon} className="w-10 h-10 md:w-20 md:h-20" />
-        ))
-        }    
-        </TechStackIcon>
-        <TechStackIcon title='Testing:'>
-        {
-        testingIcons.map(icon => (
-          <Icon key={icon} icon={icon} className="w-10 h-10 md:w-20 md:h-20" />
-        ))
-        }    
-        </TechStackIcon>
-        <TechStackIcon title='Version Control:'>
-        {
-        backendIcons.map(icon => (
-          <Icon key={icon} icon={icon} className="w-10 h-10 md:w-20 md:h-20" />
-        ))
-        }    
-        </TechStackIcon>
-   </div>  
-   </div>  
+          icons.map(icon => ( 
+          <Icon key={icon} icon={icon} className="w-10 h-10 lg:w-14 lg:h-14" color="#1b1917" />
+          ))
+        }  
+   </div> 
   );
 };
 
 export default TechStack;
+// xl:bg-gradient-to-r from-stone-900 via-stone-900-3 via-charcoal via-stone-900-97 to-stone-900

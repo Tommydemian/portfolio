@@ -8,7 +8,7 @@ type CustomLinkProps = NavLinkProps & {
 
 const Navbar = () => {
   return (
-    <div className='flex items-center justify-between py-12'>
+    <div className='flex items-center justify-between py-12 max-w-5xl'>
       <CustomLink
        to="/" 
        end

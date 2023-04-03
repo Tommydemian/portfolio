@@ -5,7 +5,14 @@ import jsHardParts from '../assets/jshardOne.png'
 import jsHardParts2 from '../assets/hardPartsnew.png'
 import reactOne from '../assets/reactOne.png'
 
-const slides: Slide[] = [
+// RedPadel images:
+import redpadel1 from '../assets/redPadelApp.png'
+import redpadel2 from '../assets/tournamentRedpadel.png'
+import redpadel3 from '../assets/clubs.png'
+import redpadel4 from '../assets/discover.png'
+
+
+export const slides: Slide[] = [
     {
             id: 1,
             url: jsHardParts,
@@ -21,4 +28,25 @@ const slides: Slide[] = [
         }
 ];
 
-export default slides;
+export const redPadelSlides: Slide[] = [
+    {
+        id: 1,
+        url:redpadel1,
+        description: ''
+    },
+    {
+        id: 2,
+        url: redpadel2,
+        description: ''
+    },
+    {
+        id: 3,
+        url: redpadel3,
+        description: ''
+    },
+    {
+        id: 4,
+        url: redpadel4,
+        description: ''
+    },
+]

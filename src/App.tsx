@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Icon } from '@iconify/react';
 
 import Navbar from './containers/Navbar';
-
-import PortfolioItemDesc from './components/PortfolioItemDesc';
+import PortfolioItemDesc from './containers/PortfolioItem';
 
 import {
   Intro,
@@ -14,9 +13,9 @@ import {
   Timeline,
   TechStack,
   Articles,
-  Carousel,
   Courses
 } from './components'
+import Project from './containers/Project';
 
 function App() {
 
@@ -59,20 +58,22 @@ function App() {
       >
         {theme === 'dark' ? sun : moon}
       </button>
-      <div className='bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen'>
-        <div className='max-w-5xl w-11-12 mx-auto px-4'>
-      <Navbar />
+      <div className='bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen flex flex-col justify-between'>
+        <div className='max-w-7xl mx-auto px-4 min-h-screen flex flex-col justify-between w-full'>
+          <Navbar />
           <Routes>
             <Route path='/' element={<Intro />} />
-            <Route path='/projects' element={ <Portfolio />} />
+            <Route path='/projects*' element={<Portfolio />}/>
+              <Route path='/projects/:id' element={<Project />} />
+            
             {/* <Route />
             <Route /> */}
-          
-          {/* <TechStack /> */}
-          {/* <Articles /> */}
-          {/* <Courses /> */}
-          {/* <Timeline /> */}
-          {/* <Contact /> */}
+
+            {/* <TechStack /> */}
+            {/* <Articles /> */}
+            {/* <Courses /> */}
+            {/* <Timeline /> */}
+            {/* <Contact /> */}
           </Routes>
           <Footer />
         </div>

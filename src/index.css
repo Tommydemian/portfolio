@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-grid-container {
+.grid-container {
     background-color: lime;
+}
+
+.border-gradient {
+    border-image: linear-gradient(94deg, rgba(255,103,0,1) 50%, rgba(46,78,91,1) 50%) 1;
 }
