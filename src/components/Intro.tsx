@@ -3,7 +3,7 @@ import React from 'react'
 import { Icon } from '@iconify/react';
 // Components: 
 import Button from './Button'
-import TechStack from './TechStack';
+import TechStack from '../containers/TechStack';
 // Assets: 
 import me from '../assets/me.png'
 
@@ -12,7 +12,7 @@ const Intro = () => {
     <section>
     <div className='flex max-w-5xl mx-auto'>
       <div className='my-auto mx-auto'>
-        <img  src={me} alt="picture of me" className='outline outline-russet rounded-full bg-charcoal' />
+        <img  src={me} alt="picture of me" className='outline outline-none rounded-full dark:bg-charcoal bg-lightblue100' />
       </div>
       <div className='basis-[70%] ml-16 flex-grow'>
         <h1 className='font-Montserrat text-4xl dark:text-white font-semibold drop-shadow-lg shadow-[#FF6700]'>Hi! I’m Tomás Gil Amoedo</h1>

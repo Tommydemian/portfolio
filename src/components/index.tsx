@@ -3,9 +3,8 @@ import Footer from "./Footer";
 import Intro from "./Intro";
 import Portfolio from "./Portfolio";
 import Timeline from "./Timeline";
-import TechStack from "./TechStack";
+import TechStack from "../containers/TechStack";
 import Articles from "./Articles";
-import Courses from "./Courses";
 
 export {
   Contact,
@@ -15,5 +14,4 @@ export {
   Timeline,
   TechStack, 
   Articles, 
-  Courses
 } 

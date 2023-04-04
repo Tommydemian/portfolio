@@ -1,38 +1,18 @@
 const icons = [
-    'icomoon-free:html-five',
-    'cib:css3-shiled', 
-    'mdi:sass',
-    'mdi:language-javascript', 
-    'mdi:language-typescript', 
-    'ion:logo-react',
-    'akar-icons:vue-fill',
-    'file-icons:vite',
-    'simple-icons:tailwindcss',       
-    'simple-icons:express', 
-    'fa6-brands:node-js',
-    'bxl:mongodb',
-    'tabler:brand-cypress',
-    'simple-icons:graphql'
+    { name: 'HTML', icon: 'icomoon-free:html-five' },
+    { name: 'CSS', icon: 'cib:css3-shiled' },
+    { name: 'SASS', icon: 'mdi:sass' },
+    { name: 'JavaScript', icon: 'mdi:language-javascript' },
+    { name: 'TypeScript', icon: 'mdi:language-typescript' },
+    { name: 'React', icon: 'ion:logo-react' },
+    { name: 'Vue', icon: 'akar-icons:vue-fill' },
+    { name: 'Vite', icon: 'file-icons:vite' },
+    { name: 'TailwindCSS', icon: 'simple-icons:tailwindcss' },
+    { name: 'Express', icon: 'simple-icons:express' },
+    { name: 'Node-js', icon: 'fa6-brands:node-js' },
+    { name: 'MongoDb', icon: 'bxl:mongodb' },
+    { name: 'Cypress', icon: 'tabler:brand-cypress' },
+    { name: 'GraphgQL', icon: 'simple-icons:graphql' }
 ]
 
 export default icons;
-
-// export const frontEndIcons: string[] = ['vscode-icons:file-type-html',
-// 'vscode-icons:file-type-css', 
-// 'vscode-icons:file-type-sass',
-// 'logos:javascript', 
-// 'vscode-icons:file-type-typescript-official', 
-// 'vscode-icons:file-type-reactjs',
-// 'vscode-icons:file-type-vue',
-// 'vscode-icons:file-type-vite',
-// 'logos:tailwindcss-icon',   ]
-
-// export const backendIcons: string[] = ['skill-icons:expressjs-dark', 
-// 'vscode-icons:file-type-node',
-// ]
-
-// export const databaseIcons: string[] = ['logos:mongodb-icon']
-
-// export const testingIcons: string[] = ['logos:cypress-icon']
-
-// export const versioncontrolIcons: string[] = ['mdi:git']

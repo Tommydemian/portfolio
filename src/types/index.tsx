@@ -1,4 +1,4 @@
-type IconDescription = {
+export type IconDescription = {
     name: string 
     icon: string
 }

@@ -13,6 +13,7 @@ module.exports = {
         gray600: '#4E5E6A',
         pumpkin: '#ff6700',
         lightblue: '#6BB7D6',
+        lightblue100: '#AECBD6',
         charcoal: '#2E4E5B',
         russet: '#713710'
         
