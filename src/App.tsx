@@ -12,8 +12,7 @@ import {
   Footer,
   Timeline,
   TechStack,
-  Articles,
-  Courses
+  Articles
 } from './components'
 import Project from './containers/Project';
 
