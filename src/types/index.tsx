@@ -37,3 +37,9 @@ export type ProjectDescription = {
     briefDescription: string
     techStack: string[]
 }
+
+export enum ButtonType {
+    BUTTON = 'button', 
+    SUBMIT = 'submit',
+    RESET = 'reset',
+}

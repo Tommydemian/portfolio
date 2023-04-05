@@ -10,28 +10,11 @@ type CustomLinkProps = NavLinkProps & {
   };
 
 const Navbar = () => {
-
-  const [isMobile, setIsMobile] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
-
-  const trackDesktop = () => {
-    const innerWith = window.innerWidth
-    if (innerWith < 638){
-      setIsMobile(true)
-    } else {
-      setIsMobile(false)
-    }
-  }
-
-  useEffect(() => {
-    trackDesktop();
-    window.addEventListener("resize", trackDesktop);
-    return () => window.removeEventListener("resize", trackDesktop);
-  }, []);
 
   useEffect(() => {
     const bodyEl = document.querySelector('body');
@@ -41,8 +24,6 @@ const Navbar = () => {
       bodyEl.style.overflowY ='auto';
     }
   }, [isOpen]);
-
-  console.log(isMobile)
 
   return (
     <div>

@@ -63,8 +63,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Intro />} />
             <Route path='/projects*' element={<Portfolio />}/>
-              <Route path='/projects/:id' element={<Project />} />
-            
+            <Route path='/projects/:id' element={<Project />} />
+            <Route path='/contact' element={<Contact />} />
             {/* <Route />
             <Route /> */}
 
