@@ -15,7 +15,7 @@ type ButtonProps = {
 
 const Button = ({children, rounded, primary, secondary, onClick}: ButtonProps) => {
   return (
-    <button onClick={onClick} className={classNames('py-2 px-5 cursor-pointer select-none outline-none shadow-md disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-100 disabled:shadow-inner inline-flex items-center justify-center',
+    <button onClick={onClick} className={classNames('py-2 px-5 text-[13px] sm:text-base font-bold cursor-pointer select-none outline-none shadow-md disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-100 disabled:shadow-inner inline-flex items-center justify-center',
      rounded ?'rounded-[10px]': '',
      primary ? ' bg-pumpkin rounded-[10px] text-russet' : '',
      secondary ? 'bg-lightblue text-charcoal' : '' 

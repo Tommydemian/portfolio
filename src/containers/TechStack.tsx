@@ -19,7 +19,7 @@ const TechStack = () => {
 
   return (
     <div
-      className='my-10 flex items-center justify-center mx-auto gap-x-5 py-4 dark:bg-charcoal bg-lightblue100 px-4'>
+      className='my-10 flex items-center justify-center flex-wrap mx-auto gap-x-5 py-4 dark:bg-charcoal bg-lightblue100 px-4'>
       {
         icons.map((icon: IconDescription) => (
           <div key={icon.name}>
