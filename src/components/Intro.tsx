@@ -4,6 +4,8 @@ import { Icon } from '@iconify/react';
 // Components: 
 import Button from './Button'
 import TechStack from '../containers/TechStack';
+// hooks:
+import { useToggle } from '../hooks/useToggle';
 // Assets: 
 import me from '../assets/me.png'
 
@@ -11,8 +13,10 @@ import { introDesc, introDescSliced } from '../data/introDesc'
 
 const Intro = () => {
 
+  const {state: readMore, toggle } = useToggle(true)
+
   const [isMobile, setIsMobile] = useState(false)
-  const [readMore, setReadMore] = useState(true)
+  // const [readMore, setReadMore] = useState(true)
 
   const trackDesktop = () => {
     const innerWith = window.innerWidth
@@ -58,7 +62,7 @@ const Intro = () => {
               )
 
             }
-          <span className='my-2 block text-[#98C3EC] ' onClick={() => setReadMore(!readMore)}>{readMore ? 'Read More...' : 'back to short v.'}</span>
+          <span className='my-2 block text-[#98C3EC] cursor-pointer' onClick={toggle}>{readMore ? 'Read More...' : 'back to short v.'}</span>
 
           <div className='flex gap-x-4'>
             <Button rounded={true} primary>

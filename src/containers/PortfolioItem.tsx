@@ -14,7 +14,7 @@ const PortfolioItem = ({title, subtitle, briefDescription, imgUrl, link, id}: Po
   
   const navigate = useNavigate() 
   return (
-    <div className='flex flex-col mt-14 sm:mt-0 sm:flex outline outline-lime-200'>
+    <div className='flex flex-col sm:flex-row mt-14 sm:mt-0 outline outline-lime-200'>
       <div className='basis-1/2'>
            <h3 className='font-Montserrat text-lg md:text-xl mb-2 md:mb-3 font-semibold dark:text-gray100'>{title}</h3>
            <h4 className='font-Montserrat text-xs md:text-md font-semibold dark:text-gray100'>{subtitle}</h4>
