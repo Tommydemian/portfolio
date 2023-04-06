@@ -15,7 +15,8 @@ module.exports = {
         lightblue: '#6BB7D6',
         lightblue100: '#AECBD6',
         charcoal: '#2E4E5B',
-        russet: '#713710'
+        russet: '#713710', 
+        silver: '#C0C0C0'
         
       },
     },

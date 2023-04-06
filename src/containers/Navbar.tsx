@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react'
-import { NavLink, NavLinkProps } from 'react-router-dom'
+import { NavLink, NavLinkProps, useLocation } from 'react-router-dom'
 import { Icon } from '@iconify/react';
 
 // hooks: 
@@ -17,6 +17,14 @@ import { ThemeContext } from '../App';
 const Navbar = () => {
 
   const {theme, setTheme} = useContext(ThemeContext)
+  const {state: isOpen, toggle: toggleMenu} = useToggle()
+  const location = useLocation()
+
+  useEffect(() => {
+    if (isOpen) {
+      toggleMenu();
+    }
+  }, [location]);
 
   const handleThemeSwitch = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
@@ -30,7 +38,6 @@ const Navbar = () => {
     }
   }, [theme])
 
-  const {state: isOpen, toggle: toggleMenu} = useToggle()
   useEffect(() => {
     const bodyEl = document.querySelector('body');
     if (isOpen && bodyEl) {
@@ -92,7 +99,7 @@ const Navbar = () => {
     }
     { isOpen ? (
       <div 
-    className='bg-[#F3F5F6] dark:bg-[#1a2023] block fixed top-0 bottom-0 left-0 right-1/2 sm:hidden z-10'
+    className='bg-[#E3E3E3] dark:bg-[#424242] block fixed top-0 bottom-0 left-0 right-1/2 sm:hidden z-10 shadow-md'
     >
     {
 
