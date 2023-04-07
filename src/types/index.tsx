@@ -32,9 +32,9 @@ export type Slide = {
 }
 
 export type ProjectDescription = {
-    projectName: string    
-    longDescription: string
+    projectTitle: string    
     briefDescription: string
+    longDescription: string
     techStack: string[]
 }
 
@@ -43,3 +43,20 @@ export enum ButtonType {
     SUBMIT = 'submit',
     RESET = 'reset',
 }
+
+interface Article {
+    link: string, 
+    name: string
+}
+
+export interface Courses {
+    id: number
+    courseTitle: string
+    courseDate?: string
+    courseTeacher?: string
+    coursePlatform?: string
+    courseDescription: string
+    courseImage: string
+    linkedinLink?: string,
+    article?: Article, 
+  }

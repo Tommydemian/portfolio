@@ -11,7 +11,6 @@ import {
   Portfolio,
   Contact,
   Footer,
-  Timeline,
   TechStack,
   Articles
 } from './components'

@@ -7,7 +7,7 @@ import { ButtonType } from '../types/index'
 
 const Contact = () => {
   return (
-    <section className='mt-14 sm:mt-0 flex flex-col mx-auto mb-10 w-full'>
+    <section className='mt-16 sm:mt-0 flex flex-col mx-auto mb-10 w-full'>
       <div className='flex mx-auto px-2 w-full sm:w-8/12 md:w-7/12'>
         <form 
         action='https://getform.io/f/39317eb4-6faa-423a-88cd-08fdf1f158d1'

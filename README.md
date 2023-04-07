@@ -1,2 +1,8 @@
-- Pasar a context el Theme
-- toggle hook
+- Custom Hook 
+- Solution to SPA problem in netlify 
+- Context API 
+- Dumb and Smart Components => Design pattern Presentation/Logic
+- TypeScript
+- Error boundaries => Customize this
+- React router DOM => dinamic navigation
+- custom and highly reusable components
