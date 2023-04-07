@@ -50,7 +50,6 @@ function App() {
             {/* <TechStack /> */}
             {/* <Articles /> */}
             {/* <Courses /> */}
-            {/* <Timeline /> */}
             {/* <Contact /> */}
           </Routes>
           <Footer />

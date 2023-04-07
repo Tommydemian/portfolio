@@ -1,9 +1,7 @@
-import React from 'react'
-
+// Components:
 import Disclaimer from './Disclaimer'
 import CoursesComponent from './CoursesComponent'
-
-
+// data:
 import courses from '../data/courses'
 const reversedOrderCourses = courses.reverse()
 

@@ -16,15 +16,15 @@ const CoursesComponent = ({
   linkedinLink
 }: CoursesProps) => {
   return (
-    <div className='my-20 shadow-lg flex flex-col sm:flex-row'>
-      <div className='basis-1/2'>
+    <div className='my-20 shadow-lg dark:shadow-gray100 flex flex-col sm:flex-row'>
+      <div className='basis-1/2 items-center justify-center'>
         <img
           src={courseImage}
           alt={courseTitle}
-          className={`object-cover w-full
+          className={` w-full
             ${courseTitle === 'Plataforma 5 - Coding BootCamp'
-              ? 'h-64'
-              : 'h-full'
+              ? 'h-64 object-none'
+              : 'h-full object-cover'
             }`}
         />
       </div>
@@ -37,7 +37,7 @@ const CoursesComponent = ({
           <p className='text-gray600 dark:text-gray100 font-semibold font-Montserrat'>{courseTeacher}</p>
         )}
         {coursePlatform && (
-          <p className='text-gray600 dark:text-gray100 font-semibold font-Montserrat'>{coursePlatform}</p>
+          <p className='font-semibold font-Montserrat text-[#e55934]'>{coursePlatform}</p>
         )}
         <p className='mt-4 text-gray600 dark:text-gray100 font-Lato'>
           {courseDescription}
